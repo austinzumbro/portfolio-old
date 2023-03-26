@@ -1,0 +1,181 @@
+:root {
+  /* Fonts */
+  /*
+     I've chosen to centralize them in variables
+     so they'll be easy to find and change.
+     
+     I used this tool to compare fonts side by side:
+     https://fontjoy.com/
+     
+     Once I had a combination I liked, I had to work out
+     how to include them in my project. But because they
+     are all Google Fonts, I could just follow the 
+     documentation here:
+     https://developers.google.com/fonts/docs/getting_started
+     */
+
+  --display-font: "Patua One";
+  --heading-font: "Fjord One";
+  --text-font: "Nunito Sans";
+
+  /* Colors */
+  /*
+    I've always been curious what was meant by "material
+    design", so I took this opportunity to do a little 
+    Googling. It's a much more in-depth topic than I care
+    to explore right now, but the "color system" did seem
+    like something I could at take as inspiration while I
+    go about choosing colors.
+    
+    I'm referencing this: 
+    https://m2.material.io/design/color/the-color-system
+    https://m3.material.io/styles/color/overview
+
+    And playing around with this:
+    https://materialpalettes.com/
+
+   */
+
+  --primary-key-color-100: #142f46;
+  --primary-key-color-90: #27435e;
+  --primary-key-color-10: #e1efff;
+  --secondary-key-color: #55b2aa;
+  --tertiary-key-color: #555cb2;
+
+  --neutral-key-color-10: #f7eadb;
+  --neutral-variant-color-100: #1c1c1c;
+  --netural-variant-color-90: #3c3c3c;
+  --neutral-variant-color-10: #f9f9f9;
+}
+
+body {
+  /* Color and Typography */
+  background-color: var(--netural-key-color-10);
+  color: var(--neutral-variant-color-100);
+  font-family: var(--text-font), sans-serif;
+}
+
+header {
+  /* Color and Typography */
+  background: var(--primary-key-color-90);
+  color: var(--primary-key-color-10);
+
+  /* Size and Position */
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header Title */
+h1 {
+  font-family: var(--display-font), var(--text-font), serif;
+  font-size: 48px;
+  line-height: 1em;
+  padding: 20px;
+}
+
+/* Section Titles */
+h2 {
+  font-family: var(--heading-font), var(--text-font), serif;
+  font-size: 32px;
+  line-height: 1em;
+  padding: 10px 6px 20px;
+}
+
+p {
+  margin: 0px 12px 14px;
+  line-height: 1.2em;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Navigation Menu */
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul li {
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.menu-category {
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* About Me Section */
+
+#about-me {
+  background: var(--primary-key-color-10);
+  color: var(--primary-key-color-90);
+}
+
+.category-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.photo-credit {
+  font-size: 80%;
+  font-style: italic;
+  padding: 4px;
+}
+
+#profile-picture {
+  width: 100%;
+}
+
+.category-content {
+  flex: 0 1 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#about-me h2 {
+  font-weight: 700;
+}
+
+#about-me .category-content p:nth-of-type(2)::first-line {
+  color: var(--primary-key-color-100);
+  font-size: 105%;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    align-items: flex-end;
+  }
+  nav ul {
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul li {
+    flex: 1 0 40px;
+    padding: 0px 12px;
+  }
+
+  #profile-picture {
+    height: 200px;
+    width: 200px;
+  }
+}
