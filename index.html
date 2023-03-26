@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Austin Zumbro Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Patua+One|Fjord+One|Nunito+Sans"
+      href="https://fonts.googleapis.com/css?family=Patua+One|Fjord+One"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
@@ -25,53 +32,101 @@
       </nav>
     </header>
 
-    <section id="main-content">
-      <section class="menu-category" id="about-me">
-        <section class="category-image">
-          <img
-            src="./assets/images/profile-picture.jpeg"
-            alt="Headshot of Austin Zumbro"
-            id="profile-picture"
-          />
-          <span class="photo-credit"
-            >Photo credit:
-            <a href="https://www.melnigro.com/" target="_blank"
-              >Mel Nigro</a
-            ></span
-          >
-        </section>
-        <section class="category-content">
-          <h2>Welcome to my Portfolio</h2>
-          <p>
-            I am a considerate and creative collaborator based out of Oakland,
-            CA.
-          </p>
-          <p>I love stories.</p>
-          <p>
-            I love consuming them, making them, recycling them, picking them
-            apart and putting them back together. Stories are the means by which
-            we structure the world around us. They are how we connect the dots
-            between Point A and Point B. Every solution to every problem is a
-            story, whether it be a dialogue or an algorithm, a game or a song.
-          </p>
-          <p>
-            It has been my pleasure to participate in many storytelling projects
-            over the years. This page collects a few of my favorites.
-          </p>
-        </section>
+    <section class="menu-category" id="about-me">
+      <figure class="category-image" id="profile-picture">
+        <figcaption class="photo-credit">
+          Photo credit:
+          <a href="https://www.melnigro.com/" target="_blank">Mel Nigro</a>
+        </figcaption>
+      </figure>
+      <section class="category-content" id="profile-description">
+        <h2>Welcome to my Portfolio</h2>
+        <p>
+          I am a considerate and creative collaborator based out of Oakland, CA.
+        </p>
+        <p>I love stories.</p>
+        <p>
+          I love consuming them, making them, recycling them, picking them apart
+          and putting them back together. Stories are the means by which we
+          structure the world around us. They are how we connect the dots
+          between Point A and Point B. Every solution to every problem is a
+          story, whether it be a conversation, an algorithm, a game or a song.
+        </p>
+        <p>
+          It has been my pleasure to participate in many storytelling projects
+          over the years. This page collects a few of my favorites.
+        </p>
       </section>
+    </section>
 
+    <section id="main-content">
       <section class="menu-category" id="web-development">
         <section class="category-content">
-          <h2>Full Stack Web Development</h2>
-          <p>This is a short biography.</p>
+          <section class="category-content-head">
+            <h2>Full Stack Web Development</h2>
+            <p>
+              I am relatively new to the world of web applications, but I am
+              having a blast so far. These are a few of the challenges and
+              experiments I've played around with.
+            </p>
+          </section>
+
+          <section class="project-grid">
+            <section class="project-card" id="web-dev-project-1">
+              <figure class="project-image">
+                <img src="assets/images/horiseon-square.png" />
+                <figcaption>
+                  <h3>Refactor a Marketing Website</h3>
+                  <p>
+                    Given an existing HTML and CSS file, what can I do to make
+                    the code and site more accessible?
+                  </p>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section class="project-card" id="web-dev-project-2">
+              <figure class="project-image">
+                <img src="https://placehold.co/400" />
+                <figcaption>Marketing Refactor</figcaption>
+              </figure>
+            </section>
+
+            <section class="project-card" id="web-dev-project-3">
+              <figure class="project-image">
+                <img src="https://placehold.co/400" />
+                <figcaption>Marketing Refactor</figcaption>
+              </figure>
+            </section>
+
+            <section class="project-card" id="web-dev-project-4">
+              <figure class="project-image">
+                <img src="https://placehold.co/400" />
+                <figcaption>Refactor a Marketing Website</figcaption>
+              </figure>
+            </section>
+            <section class="project-card" id="web-dev-project-5">
+              <figure class="project-image">
+                <img src="https://placehold.co/400" />
+                <figcaption>Marketing Refactor</figcaption>
+              </figure>
+            </section>
+            <section class="project-card" id="web-dev-project-5">
+              <figure class="project-image">
+                <img src="https://placehold.co/400" />
+                <figcaption>Marketing Refactor</figcaption>
+              </figure>
+            </section>
+          </section>
         </section>
       </section>
 
       <section class="menu-category" id="writing">
         <section class="category-content">
-          <h2>Writing & Composing</h2>
-          <p>This is a short biography.</p>
+          <section class="category-content-head">
+            <h2>Writing & Composing</h2>
+            <p>This is a short biography.</p>
+          </section>
         </section>
       </section>
     </section>
