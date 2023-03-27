@@ -4,9 +4,9 @@
 
 It seems prudent to get a page together where I can publicly and concisely share my work and contact information, so that is what I'm doing this week.
 
-### My Approach
+## My Approach
 
-#### Page Building
+### Page Building
 
 I already have some experience building webpages in Wordpress and Squarespace environments, but this is the first time I've ever built a page completely from scratch.
 
@@ -14,7 +14,7 @@ I was struck by how similar the experience was working with the code as opposed 
 
 It is also much harder to build a page about myself. I never know what to write, so every time I need to generate copy, it slows me down. (I should probably just use lorem ipsum, but then I feel like I'll just have to come back to it, so why not get it out of the way.) But all of that is nothing compared how much I struggled with the visual aspect.
 
-#### Colors
+### Colors
 
 The most challenging part of this project was the design aspect. I feel very comfortable working with HTML elements and CSS selectors, and I can look up and follow documentation when I'm unsure, but there is no clear cut documentation for how a page should look, and visual/graphic arts are not my strong suit.
 
@@ -85,13 +85,13 @@ If I felt like the page was complete, I could go back and remove any unused colo
 
 (I will say, while I enjoyed doing all this research on Material Design, I don't particularly enjoy my results, nor have I particularly enjoyed any of the examples I've seen... So, while I will withhold judgement until I have a better understanding of the concept, I suspect I may just not like Material Design. I'll need to do more research on web/graphic designs to find out what I do like.)
 
-#### Typography
+### Typography
 
 I similarly agonized over the typography, but there was a lot less to agonize over. I found a tool called [Fontjoy](fontjoy.com) that will generate a trio of Google Fonts. I clicked around until I got something I could live with, then agonized over it a little more, and then decided it was good enough.
 
 I've never had to import Google Fonts before, but the documentation was clear. I did somehow gloss over the part about importing different font styles, so I spent a few minutes confused about why I couldn't make anything bold. (Of course, right after I figured it out, I decided I didn't like the way those bolded things looked.)
 
-#### Mobile First
+### Mobile First
 
 I have also heard the words "mobile first" a lot in relation to web design concepts, so I did some Googling to check that out.
 
