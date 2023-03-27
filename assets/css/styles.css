@@ -36,27 +36,77 @@
 
    */
 
-  --primary-key-color-100: #142f46;
-  --primary-key-color-90: #27435e;
-  --primary-key-color-10: #e1efff;
-  --secondary-key-color-100: #10493f;
+  --primary-key-color-10: #e7f1f6;
+  --primary-key-color-20: #c5ddea;
+  --primary-key-color-30: #a5c9dd;
+  --primary-key-color-40: #89b3cd;
+  --primary-key-color-50: #77a4c3;
+  --primary-key-color-60: #6996ba;
+  --primary-key-color-70: #5f89ae;
+  --primary-key-color-80: #53789d;
+  --primary-key-color-90: #4a688a;
+  --primary-key-color-100: #3a4c69;
+
+  --secondary-key-color-10: #e3f8f8;
+  --secondary-key-color-20: #bbedee;
+  --secondary-key-color-30: #93e2e5;
+  --secondary-key-color-40: #72d6da;
+  --secondary-key-color-50: #62ccd3;
+  --secondary-key-color-60: #5cc3cd;
+  --secondary-key-color-70: #56b2ba;
+  --secondary-key-color-80: #4f9da1;
+  --secondary-key-color-90: #4a888a;
+  --secondary-key-color-100: #3f6462;
+
+  --tertiary-key-color-10: #ece8f0;
+  --tertiary-key-color-20: #d1c7dc;
+  --tertiary-key-color-30: #b3a2c4;
+  --tertiary-key-color-40: #967ead;
+  --tertiary-key-color-50: #80639b;
+  --tertiary-key-color-60: #6c4a8a;
+  --tertiary-key-color-70: #654485;
+  --tertiary-key-color-80: #5b3c7b;
+  --tertiary-key-color-90: #513671;
+  --tertiary-key-color-100: #422c5e;
+
+  /* --secondary-key-color-100: #10493f;
+  --secondary-key-color-90: #17655a;
   --secondary-key-color-70: #1d8478;
   --secondary-key-color-40: #55b2aa;
   --secondary-key-color-30: #82c8c2;
+  --secondary-key-color-20: #b3ddda;
   --secondary-key-color-10: #e1f1f1;
-  --tertiary-key-color-60: #4e54a8;
-  --tertiary-key-color-50: #555cb2;
 
-  --neutral-key-color-10: #f7eadb;
-  --neutral-variant-color-100: #1c1c1c;
-  --neutral-variant-color-90: #3c3c3c;
-  --neutral-variant-color-10: #f9f9f9;
+  --tertiary-key-color-60: #4e54a8;
+  --tertiary-key-color-50: #555cb2; */
+
+  --neutral-key-color-10: #ffffff;
+  --neutral-key-color-20: #fafafa;
+  --neutral-key-color-30: #f5f5f5;
+  --neutral-key-color-40: #f0f0f0;
+  --neutral-key-color-50: #dedede;
+  --neutral-key-color-60: #c2c2c2;
+  --neutral-key-color-70: #979797;
+  --neutral-key-color-80: #818181;
+  --neutral-key-color-90: #606060;
+  --neutral-key-color-100: #3c3c3c;
+
+  --neutral-variant-color-10: #f7e9d5;
+  --neutral-variant-color-20: #dfcab3;
+  --neutral-variant-color-30: #c1a78d;
+  --neutral-variant-color-40: #a18667;
+  --neutral-variant-color-50: #8a6c4a;
+  --neutral-variant-color-60: #73542d;
+  --neutral-variant-color-70: #694a27;
+  --neutral-variant-color-80: #5a3e1f;
+  --neutral-variant-color-90: #4d3117;
+  --neutral-variant-color-100: #3e230d;
 }
 
 body {
   /* Color and Typography */
   background-color: var(--netural-key-color-10);
-  color: var(--neutral-variant-color-100);
+  color: var(--neutral-key-color-100);
   font-family: var(--text-font), sans-serif;
   font-weight: 200;
 }
@@ -85,12 +135,26 @@ h1 {
   padding: 20px;
 }
 
+h2,
+h3 {
+  font-family: var(--heading-font), var(--text-font), serif;
+}
+
 /* Section Titles */
 h2 {
-  font-family: var(--heading-font), var(--text-font), serif;
   font-size: 32px;
   line-height: 1em;
   padding: 10px 6px 20px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 700;
+
+  margin-top: -3px;
+  margin-bottom: 12px;
+  padding: 28px 12px;
 }
 
 p {
@@ -101,18 +165,26 @@ p {
 a {
   color: inherit;
   text-decoration: inherit;
+  cursor: pointer;
+}
+
+audio {
+  margin: 0px 12px;
+  max-width: 90%;
 }
 
 /* Navigation Menu */
 
-nav ul {
+nav ul,
+footer ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
 }
 
-nav ul li {
+nav ul li,
+footer ul li {
   padding: 12px 0px;
   text-align: center;
 }
@@ -129,7 +201,7 @@ nav ul li {
 
 #about-me {
   background: var(--primary-key-color-10);
-  color: var(--primary-key-color-90);
+  color: var(--primary-key-color-100);
 
   display: flex;
   flex-wrap: wrap;
@@ -152,7 +224,7 @@ nav ul li {
 
 #profile-picture figcaption {
   background: var(--primary-key-color-90);
-  color: var(--neutral-variant-color-10);
+  color: var(--neutral-key-color-10);
   font-size: 80%;
   font-style: italic;
   padding: 6px;
@@ -178,47 +250,78 @@ nav ul li {
 }
 
 /* Main Content */
-figcaption h3 {
-  padding: 12px;
-  font-weight: 700;
-}
-
-.project-style {
-  font-weight: 600;
-  font-style: italic;
-  margin-right: 6px;
+.category-content-head {
+  min-height: 120px;
 }
 
 .project-grid {
   padding: 20px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .project-grid img {
   width: 100%;
 }
 
+.project-card {
+  border-radius: 0px 0px 8px 8px;
+  background: var(--neutral-key-color-10);
+  padding-bottom: 8px;
+}
+
+.project-card h3 {
+  /* background: var(--primary-key-color-60);
+  color: var(--primary-key-color-10); */
+}
+
 /* Web Development */
 #web-development {
-  background: var(--secondary-key-color-30);
+  background: var(--secondary-key-color-20);
 }
 
 #web-development .category-content-head {
-  background: var(--secondary-key-color-70);
+  background: var(--secondary-key-color-90);
   color: var(--secondary-key-color-10);
+}
+
+#web-development h3 {
+  background: var(--secondary-key-color-80);
+  color: var(--secondary-key-color-10);
+}
+
+#web-dev-project-1 ~ .project-card {
+  margin: 20px;
 }
 
 /* Writing & Composing */
 #writing {
-  background: var(--tertiary-key-color-60);
+  background: var(--tertiary-key-color-20);
 }
 
 #writing .category-content-head {
-  background: var(--tertiary-key-color-60);
-  color: var(--neutral-variant-color-10);
-  padding: 20px;
+  background: var(--tertiary-key-color-90);
+  color: var(--tertiary-key-color-10);
+}
+
+#writing h3 {
+  background: var(--tertiary-key-color-80);
+  color: var(--tertiary-key-color-10);
+}
+
+#llama-llama {
+  background: var(--tertiary-key-color-20);
+}
+
+/* Footer */
+footer {
+  background: var(--primary-key-color-90);
+  color: var(--primary-key-color-10);
+  width: 100%;
+  min-height: 120px;
+  padding: 16px 0px;
+  text-align: center;
 }
 
 @media screen and (min-width: 798px) {
@@ -226,14 +329,21 @@ figcaption h3 {
     align-items: flex-end;
   }
 
-  nav ul {
+  nav ul,
+  footer ul {
     flex-direction: row;
     align-content: flex-end;
     justify-content: flex-end;
     align-items: center;
   }
 
-  nav ul li {
+  footer ul {
+    max-width: 1080px;
+    margin: auto;
+  }
+
+  nav ul li,
+  footer ul li {
     flex: 1 0 40px;
     padding: 0px 12px;
   }
@@ -251,6 +361,6 @@ figcaption h3 {
 
   #main-content {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
   }
 }
