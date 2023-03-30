@@ -83,7 +83,7 @@ It took me a long time to arrive at this list, which arguably wasn't the best us
 
 If I felt like the page was complete, I could go back and remove any unused colors. But given the scope of this project, I'm not too concerned.
 
-(I will say, while I enjoyed doing all this research on Material Design, I don't particularly enjoy my results, nor have I particularly enjoyed any of the examples I've seen... So, while I will withhold judgement until I have a better understanding of the concept, I suspect I may just not like Material Design. I'll need to do more research on web/graphic designs to find out what I do like.)
+(I will say, while I enjoyed doing all this research on Material Design, I don't particularly enjoy my results, nor have I particularly enjoyed any of the examples I've seen... So, while I will withhold judgement until I have a better understanding of the concept, I suspect I may just not enjoy the Material Design aesthetic. I'll need to do more research on web/graphic designs to find out what I do like.)
 
 ### Typography
 
